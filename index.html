@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #3498db;
+            /* Blue */
+            color: #ffffff;
+            /* White text */
+            border-radius: 5px;
+            margin: 10px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .text {
+            flex-grow: 1;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .image {
+            max-width: 50%;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .sparkling-button {
+            background: linear-gradient(45deg, #f06, #9f6);
+            border: none;
+            color: #fff;
+            font-size: 24px;
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sparkling-button::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 70%);
+            transform: rotate(30deg);
+            animation: sparkle 3s linear infinite;
+        }
+
+        @keyframes sparkle {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+                opacity: 0;
+            }
+
+            50% {
+                transform: translate(-50%, -50%) rotate(360deg);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(720deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <center>
+                <h1><u>Welcome to EIILM</u></h1>
+            </center>
+        </div>
+        <marquee behavior="" direction="" bgcolor="aqua" height="40px">
+            <h3>Take the world's best courses, Join for free </h3>
+        </marquee>
+        <a href="/About.html" class="button button1">About Us</a>
+        <a href="/admission.html" class="button button2">Admission Form</a>
+        <a href="/fees.html" class="button button3">Fees Structure</a>
+        <a href="/contact.html" class="button button4">Contact Us</a>
+        <button class="sparkling-button">Free Admission</button>
+    </header>
+
+    <hr heigth="150px">
+    <div class="container">
+        <img src="/wel.webp" alt="" class="image">
+        <div class="text">
+            <p>Over the years, EIILM-Kolkata has acquired the reputation of an esteemed institution for knowledge
+                creation. Faculty members conduct regular classes and workshops to acquaint the students with sound
+                business theories and their practical applications. The institute has been successful in nurturing
+                students' and making them corporate ready.</p>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
